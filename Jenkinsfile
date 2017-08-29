@@ -9,8 +9,9 @@ pipeline {
     GITHUB_TOKEN = credentials('git-02')
    }
     options {
-        buildDiscarder(logRotator( artifactNumToKeepStr: '5')
-        
+       buildDiscarder(logRotator(artifactDaysToKeepStr: '30', artifactNumToKeepStr: '5', daysToKeepStr: '30', numToKeepStr: '5'))
+        timestamps()
+        disableConcurrentBuilds()    
     }
     tools {
         maven 'linux-maven-3.3.9'
