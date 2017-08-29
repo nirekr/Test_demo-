@@ -10,7 +10,7 @@ pipeline {
    }
     options {
         buildDiscarder(logRotator( artifactNumToKeepStr: '5')
-        timestamps()
+        
     }
     tools {
         maven 'linux-maven-3.3.9'
