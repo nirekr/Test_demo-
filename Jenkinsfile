@@ -56,14 +56,14 @@ sh"cp /${WORKSPACE}/INPUT_FOLDER/engineering-standards-service-parent/nexb-outpu
 sh"cp /${WORKSPACE}/INPUT_FOLDER/identity-service-api/nexb-output/identity-service-api.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
 sh"cp /${WORKSPACE}/INPUT_FOLDER/common-keystore/nexb-output/common-keystore.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
 sh"cp /${WORKSPACE}/INPUT_FOLDER/common-client-parent/nexb-output/common-client-parent.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
-### Newest additions added on the 8th August 2017 ###
+// Newest additions added on the 8th August 2017 ###
 sh"cp /${WORKSPACE}/INPUT_FOLDER/endpoint-registration-api/nexb-output/endpoint-registration-api.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
 sh"cp /${WORKSPACE}/INPUT_FOLDER/hal-data-provider-api/nexb-output/hal-data-provider-api.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
 sh"cp /${WORKSPACE}/INPUT_FOLDER/hal-orchestrator-service-api/nexb-output/hal-orchestrator-service-api.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
-### Newest additions added on the 15th August 2017 ###
+// Newest additions added on the 15th August 2017 ###
 sh"cp /${WORKSPACE}/INPUT_FOLDER/credential-service-api/nexb-output/credential-service-api.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
 sh"cp /${WORKSPACE}/INPUT_FOLDER/component-rackhd/nexb-output/component-rackhd.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
-### Newest additions added on the 21st August 2017 ###
+// Newest additions added on the 21st August 2017 ###
 sh"cp /${WORKSPACE}/INPUT_FOLDER/rcm-fitness-ui/nexb-output/rcm-fitness-ui.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
 sh"cp /${WORKSPACE}/INPUT_FOLDER/rcm-fitness-client-parent/nexb-output/rcm-fitness-client-parent.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
 sh"cp /${WORKSPACE}/INPUT_FOLDER/prepositioning-downloader-parent/nexb-output/prepositioning-downloader-parent.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
@@ -74,9 +74,9 @@ sh"cp /${WORKSPACE}/INPUT_FOLDER/rcm-evaluation-service-parent/nexb-output/rcm-e
 sh"cp /${WORKSPACE}/INPUT_FOLDER/esrs-service-api/nexb-output/esrs-service-api.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
 sh"cp /${WORKSPACE}/INPUT_FOLDER/esrs-service-parent/nexb-output/esrs-service-parent.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
 sh"cp /${WORKSPACE}/INPUT_FOLDER/hdp-capability-registry-api/nexb-output/hdp-capability-registry-api.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
-### Newest additions added on the 24th August 2017 ###
+// Newest additions added on the 24th August 2017 ###
 sh"cp /${WORKSPACE}/INPUT_FOLDER/sample-service-api/nexb-output/sample-service-api.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
-### Newest additions added on the 28th August 2017 ###
+// Newest additions added on the 28th August 2017 ###
 sh"cp /${WORKSPACE}/INPUT_FOLDER/network-capabilities-api/nexb-output/network-capabilities-api.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
            
           
