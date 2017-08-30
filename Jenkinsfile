@@ -28,7 +28,7 @@ pipeline {
        }
       stage("Build") {
             steps {
-                sh "mkdir -p /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
+                sh "mkdir INPUT_FOLDER/zFinal_Report/"
                 sh "cp /${WORKSPACE}/INPUT_FOLDER/storage-capabilities-api/nexb-output/storage-capabilities-api.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
 sh"cp /${WORKSPACE}/INPUT_FOLDER/virtualization-capabilities-api/nexb-output/virtualization-capabilities-api.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
 sh"cp /${WORKSPACE}/INPUT_FOLDER/compute-capabilities-api/nexb-output/compute-capabilities-api.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
