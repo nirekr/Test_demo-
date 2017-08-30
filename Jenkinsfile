@@ -72,6 +72,12 @@ sh"cp '/${WORKSPACE}/INPUT_FOLDER/rcm-compliance-data-service-parent/nexb-output
 sh"cp '/${WORKSPACE}/INPUT_FOLDER/rcm-definition-service-parent/nexb-output/rcm-definition-service-parent.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
 sh"cp '/${WORKSPACE}/INPUT_FOLDER/rcm-evaluation-service-parent/nexb-output/rcm-evaluation-service-parent.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
 sh"cp '/${WORKSPACE}/INPUT_FOLDER/esrs-service-api/nexb-output/esrs-service-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/esrs-service-parent/nexb-output/esrs-service-parent.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/hdp-capability-registry-api/nexb-output/hdp-capability-registry-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+// Newest additions added on the 24th August 2017 ###
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/sample-service-api/nexb-output/sample-service-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+// Newest additions added on the 28th August 2017 ###
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/network-capabilities-api/nexb-output/network-capabilities-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
 
 
        publishHTML (target: [
