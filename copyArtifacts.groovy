@@ -16,7 +16,7 @@ def call() {
   step([$class: 'CopyArtifact', filter: '**/nexb-output/**', fingerprintArtifacts: true, optional: true, projectName: 'dellemc-symphony3/prepositioning-downloader-api/master', target: 'INPUT_FOLDER/prepositioning-downloader-api'])
   step([$class: 'CopyArtifact', filter: '**/nexb-output/**', fingerprintArtifacts: true, optional: true, projectName: 'dellemc-symphony5/system-integration-sdk/develop', target: 'INPUT_FOLDER/system-integration-sdk'])
   step([$class: 'CopyArtifact', filter: '**/nexb-output/**', fingerprintArtifacts: true, optional: true, projectName: 'dellemc-symphony4/rcm-compliance-data-service-api/master', target: 'INPUT_FOLDER/rcm-compliance-data-service-api'])
-  step([$class: 'CopyArtifact', filter: '**/nexb-output/**', fingerprintArtifacts: true, optional: true, projectName: 'dellemc-symphony4/rcm-definition-service-api/masterr', target: 'INPUT_FOLDER/rcm-definition-service-api'])
+  step([$class: 'CopyArtifact', filter: '**/nexb-output/**', fingerprintArtifacts: true, optional: true, projectName: 'dellemc-symphony4/rcm-definition-service-api/master', target: 'INPUT_FOLDER/rcm-definition-service-api'])
   
   step([$class: 'CopyArtifact', filter: '**/nexb-output/**', fingerprintArtifacts: true, optional: true, projectName: 'dellemc-symphony4/rcm-evaluation-service-api/master', target: 'INPUT_FOLDER/rcm-evaluation-service-api'])
   step([$class: 'CopyArtifact', filter: '**/nexb-output/**', fingerprintArtifacts: true, optional: true, projectName: 'dellemc-symphony3/node-discovery-paqx-parent/master', target: 'INPUT_FOLDER/node-discovery-paqx-parent'])
