@@ -28,7 +28,7 @@ pipeline {
        }
       stage("Build") {
             steps {
-                 sh "mkdir -p /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/"
+                 sh "mkdir -p '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
                 sh "yes| cp '/${WORKSPACE}/INPUT_FOLDER/storage-capabilities-api/nexb-output/storage-capabilities-api.html'  '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
                   
        publishHTML (target: [
