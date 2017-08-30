@@ -95,11 +95,12 @@ sh"cp /${WORKSPACE}/INPUT_FOLDER/network-capabilities-api/nexb-output/network-ca
             steps {
                archive '**/INPUT_FOLDER/**'
             }
-        }   
+        }  
+    }
   post {
       success {
             cleanWorkspace() 
         }          
 }
-}
+
 }
