@@ -79,30 +79,28 @@ sh"cp '/${WORKSPACE}/INPUT_FOLDER/sample-service-api/nexb-output/sample-service-
 // Newest additions added on the 28th August 2017 ###
 sh"cp '/${WORKSPACE}/INPUT_FOLDER/network-capabilities-api/nexb-output/network-capabilities-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
 
+      publishHTML (target: [
+       allowMissing: false,
+       alwaysLinkToLastBuild: true,
+       keepAll: true,
+       reportDir: '${WORKSPACE}/INPUT_FOLDER/zFinal_Report/',
+       reportFiles: 'component-common-core.html,storage-capabilities-api.html,component-common-validators.html,common-messaging-parent.html,common-dependencies,virtualization-capabilities-api.html,compute-capabilities-api.html,dne-paqx-parent.html,fru-paqx-parent.html,ticketing-service-paqx-parent-sample.html,scaling-module-parent.html,apm-nagios-parent.html,root-parent.html,prepositioning-downloader-api.html,system-integration-sdk.html,workflow-cli.html,rcm-compliance-data-service-api.html,rcm-definition-service-api.html,rcm-evaluation-service-api.html,node-discovery-paqx-parent.html,prepositioning-content-share-api.html,coprhd-adapter-parent.html,monitoring-scaling-ticketing-sample.html,rcm-fitness-common-keystore.html,common-client-parent.html,hal-orchestration-service-api.html,hal-data-provider-api.html,endpoint-registration-api.html,credential-service-api.html,component-rackhd.html,rcm-fitness-ui.html,rcm-fitness-client-parent.html,prepositioning-downloader-parent.html,rcm-capabilities-api.html,rcm-compliance-data-service-parent.html,rcm-definition-service-parent.html,rcm-evaluation-service-parent.html,esrs-service-api.html,esrs-service-parent.html,hdp-capability-registry-api.html,sample-service-api,network-capabilities-api.html',
+       reportName: "NexB Scans Report (Master)"
+     ])
             }
-       
       }
     
      stage('Archive Artifacts') {
             steps {
                archive '**/INPUT_FOLDER/**'
             }
-       publishHTML (target: [
-       allowMissing: false,
-       alwaysLinkToLastBuild: false,
-       keepAll: true,
-       reportDir: '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/',
-       reportFiles: 'component-common-core.html,storage-capabilities-api.html,component-common-validators.html,common-messaging-parent.html,common-dependencies,virtualization-capabilities-api.html,compute-capabilities-api.html,dne-paqx-parent.html,fru-paqx-parent.html,ticketing-service-paqx-parent-sample.html,scaling-module-parent.html,apm-nagios-parent.html,root-parent.html,prepositioning-downloader-api.html,system-integration-sdk.html,workflow-cli.html,rcm-compliance-data-service-api.html,rcm-definition-service-api.html,rcm-evaluation-service-api.html,node-discovery-paqx-parent.html,prepositioning-content-share-api.html,coprhd-adapter-parent.html,monitoring-scaling-ticketing-sample.html,rcm-fitness-common-keystore.html,common-client-parent.html,hal-orchestration-service-api.html,hal-data-provider-api.html,endpoint-registration-api.html,credential-service-api.html,component-rackhd.html,rcm-fitness-ui.html,rcm-fitness-client-parent.html,prepositioning-downloader-parent.html,rcm-capabilities-api.html,rcm-compliance-data-service-parent.html,rcm-definition-service-parent.html,rcm-evaluation-service-parent.html,esrs-service-api.html,esrs-service-parent.html,hdp-capability-registry-api.html,sample-service-api,network-capabilities-api.html',
-       reportName: "NexB Scans Report (Master)"
-     ])
-    
+        }  
+    }
   post {
       success {
             cleanWorkspace() 
         }          
 }
-     }
-      }
 
-    }
+}
 
