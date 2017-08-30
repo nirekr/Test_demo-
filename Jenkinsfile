@@ -6,7 +6,7 @@ pipeline {
             }
     }
    environment {
-    GITHUB_TOKEN = credentials('git-02')
+    GITHUB_TOKEN = credentials('github-02')
    }
     options {
        buildDiscarder(logRotator(artifactDaysToKeepStr: '30', artifactNumToKeepStr: '5', daysToKeepStr: '30', numToKeepStr: '5'))
@@ -21,7 +21,7 @@ pipeline {
         stage("CopyArtifacts") {
            steps {
              script {
-                      def externalCopyArtifacts = load("CopyArtifacts.groovy")    
+                      def externalCopyArtifacts = load("copyArtifacts.groovy")    
                       externalCopyArtifacts()
                 }
              }
@@ -96,6 +96,9 @@ sh"cp /${WORKSPACE}/INPUT_FOLDER/network-capabilities-api/nexb-output/network-ca
                archive '**/INPUT_FOLDER/**'
             }
         }   
-            
+  post {
+      success {
+            cleanWorkspace() 
+        }          
 }
 }
