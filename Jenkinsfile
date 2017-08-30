@@ -28,7 +28,7 @@ pipeline {
        }
       stage("Build") {
             steps {
-                sh "mkdir INPUT_FOLDER/zFinal_Report/"
+                sh "mkdir -p INPUT_FOLDER/zFinal_Report/"
                   
        publishHTML (target: [
        allowMissing: false,
