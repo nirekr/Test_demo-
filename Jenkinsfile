@@ -6,7 +6,7 @@ pipeline {
             }
     }
    environment {
-    GITHUB_TOKEN = credentials('github-03')
+    GITHUB_TOKEN = credentials('git-02')
    }
     options {
        buildDiscarder(logRotator(artifactDaysToKeepStr: '30', artifactNumToKeepStr: '5', daysToKeepStr: '30', numToKeepStr: '5'))
