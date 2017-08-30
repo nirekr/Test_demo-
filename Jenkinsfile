@@ -37,6 +37,23 @@ sh " cp '/${WORKSPACE}/INPUT_FOLDER/fru-paqx-parent/nexb-output/fru-paqx-parent.
 sh "cp '/${WORKSPACE}/INPUT_FOLDER/ticketing-service-paqx-parent-sample/nexb-output/ticketing-service-paqx-parent-sample.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
 sh " cp '/${WORKSPACE}/INPUT_FOLDER/infrastructure-scaling-module/nexb-output/scaling-module-parent.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
 //sh "cp '/${WORKSPACE}/INPUT_FOLDER/application-performance-monitoring/nexb-output/apm-nagios-parent.html ' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/root-parent/nexb-output/root-parent.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/prepositioning-downloader-api/nexb-output/prepositioning-downloader-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/system-integration-sdk/nexb-output/system-integration-sdk.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/rcm-compliance-data-service-api/nexb-output/rcm-compliance-data-service-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/rcm-definition-service-api/nexb-output/rcm-definition-service-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/rcm-evaluation-service-api/nexb-output/rcm-evaluation-service-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/node-discovery-paqx-parent/nexb-output/node-discovery-paqx-parent.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/prepositioning-content-share-api/nexb-output/prepositioning-content-share-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/coprhd-adapter-parent/nexb-output/coprhd-adapter-parent.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/common-dependencies/nexb-output/common-dependencies.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/common-messaging-parent/nexb-output/common-messaging-parent.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/component-common-validators/nexb-output/component-common-validators.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/component-common-core/nexb-output/component-common-core.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/node-expansion-ui/nexb-output/node-expansion-ui.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/engineering-standards-service-api/nexb-output/engineering-standards-service-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/engineering-standards-service-parent/nexb-output/engineering-standards-service-parent.html /${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"cp '/${WORKSPACE}/INPUT_FOLDER/identity-service-api/nexb-output/identity-service-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
 
 
        publishHTML (target: [
