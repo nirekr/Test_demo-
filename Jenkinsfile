@@ -30,6 +30,13 @@ pipeline {
             steps {
                  sh "mkdir -p '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
 sh "yes | cp '/${WORKSPACE}/INPUT_FOLDER/storage-capabilities-api/nexb-output/storage-capabilities-api.html'  '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+//sh "yes | cp '/${WORKSPACE}/INPUT_FOLDER/virtualization-capabilities-api/nexb-output/virtualization-capabilities-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"yes | cp '/${WORKSPACE}/INPUT_FOLDER/compute-capabilities-api/nexb-output/compute-capabilities-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "              
+sh"yes | cp '/${WORKSPACE}/INPUT_FOLDER/dne-paqx-parent/nexb-output/dne-paqx-parent.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"yes | cp '/${WORKSPACE}/INPUT_FOLDER/fru-paqx-parent/nexb-output/fru-paqx-parent.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"yes | cp '/${WORKSPACE}/INPUT_FOLDER/ticketing-service-paqx-parent-sample/nexb-output/ticketing-service-paqx-parent-sample.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+sh"yes | cp '/${WORKSPACE}/INPUT_FOLDER/infrastructure-scaling-module/nexb-output/scaling-module-parent.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+//sh"yes | cp '/${WORKSPACE}/INPUT_FOLDER/application-performance-monitoring/nexb-output/apm-nagios-parent.html ' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
 
 
        publishHTML (target: [
