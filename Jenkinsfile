@@ -105,4 +105,4 @@ sh"cp '/${WORKSPACE}/INPUT_FOLDER/network-capabilities-api/nexb-output/network-c
       }
 
     }
-}
+
