@@ -87,16 +87,26 @@ sh "wget 'http://ci-build.mpe.lab.vce.com:8080/job/Ratnangi%20Nirek/job/${BRANCH
      stage('Archive Artifacts') {
             steps {
              
-             archiveArtifacts artifacts: '**/INPUT_FOLDER', fingerprint: true
+             archiveArtifacts artifacts: '**/INPUT_FOLDER/**', fingerprint: true
             }
      }
         stage ('Publish HTML Reports') {
             steps {
-             publishHTML (target: [
+        // install required gems
+        sh 'bundle install'
+
+        // build and run tests with coverage
+        sh 'bundle exec rake build spec'
+
+        // Archive the built artifacts
+        archive includes: 'pkg/*.gem'
+            
+       //publish HTML
+        publishHTML (target: [
        allowMissing: false,
        alwaysLinkToLastBuild: true,
        keepAll: true,
-       reportDir: '${WORKSPACE}',
+       reportDir: 'INPUT_FOLDER',
        reportFiles: 'component-common-core.html,storage-capabilities-api.html,component-common-validators.html,common-messaging-parent.html,common-dependencies,virtualization-capabilities-api.html,compute-capabilities-api.html,dne-paqx-parent.html,fru-paqx-parent.html,ticketing-service-paqx-parent-sample.html,scaling-module-parent.html,apm-nagios-parent.html,root-parent.html,prepositioning-downloader-api.html,system-integration-sdk.html,workflow-cli.html,rcm-compliance-data-service-api.html,rcm-definition-service-api.html,rcm-evaluation-service-api.html,node-discovery-paqx-parent.html,prepositioning-content-share-api.html,coprhd-adapter-parent.html,monitoring-scaling-ticketing-sample.html,rcm-fitness-common-keystore.html,common-client-parent.html,hal-orchestration-service-api.html,hal-data-provider-api.html,endpoint-registration-api.html,credential-service-api.html,component-rackhd.html,rcm-fitness-ui.html,rcm-fitness-client-parent.html,prepositioning-downloader-parent.html,rcm-capabilities-api.html,rcm-compliance-data-service-parent.html,rcm-definition-service-parent.html,rcm-evaluation-service-parent.html,esrs-service-api.html,esrs-service-parent.html,hdp-capability-registry-api.html,sample-service-api,network-capabilities-api.html',
        reportName: "NexB Scans Report (Master)"
      ])
