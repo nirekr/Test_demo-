@@ -1,4 +1,9 @@
 pipeline {
+    parameters {
+        string(name: 'dockerImagesDel', defaultValue: 'true')
+        string(name: 'dockerRegistry',  defaultValue: 'docker-dev-local.art.local')
+        string(name: 'dockerImageTag',  defaultValue: '${BRANCH_NAME}.${BUILD_NUMBER}')
+    }
     agent {
         node{
             label 'maven-builder'
