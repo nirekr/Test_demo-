@@ -85,6 +85,7 @@ sh"cp '/${WORKSPACE}/INPUT_FOLDER/network-capabilities-api/nexb-output/network-c
     
      stage('Archive Artifacts') {
             steps {
+             sh "mvn install -Dmaven.repo.local=.repo -DskipTests=true -DskipITs=true -P buildDockerImageOnJenkins"
              archive "'**/INPUT_FOLDER/**'"
             }
      }
