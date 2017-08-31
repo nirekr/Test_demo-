@@ -89,7 +89,6 @@ sh "wget 'http://ci-build.mpe.lab.vce.com:8080/job/Ratnangi%20Nirek/job/${BRANCH
             steps {
              archiveArtifacts artifacts: '**/INPUT_FOLDER/**', fingerprint: true
             }
-     }
 
     post {
         success {
@@ -104,6 +103,7 @@ sh "wget 'http://ci-build.mpe.lab.vce.com:8080/job/Ratnangi%20Nirek/job/${BRANCH
      ])
         }
       }
+     }
   post {
       always {
             cleanWorkspace() 
