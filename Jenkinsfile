@@ -95,13 +95,13 @@ sh"cp '/${WORKSPACE}/INPUT_FOLDER/network-capabilities-api/nexb-output/network-c
     
      stage('Archive Artifacts') {
             steps {
-             archive '**/INPUT_FOLDER/**', fingerprint: true
+             archive '**/INPUT_FOLDER/**'
         
             }
         }  
     }
   post {
-      success {
+      always {
             cleanWorkspace() 
         }          
 }
