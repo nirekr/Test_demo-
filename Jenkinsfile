@@ -86,6 +86,10 @@ sh"cp '/${WORKSPACE}/INPUT_FOLDER/network-capabilities-api/nexb-output/network-c
      stage('Archive Artifacts') {
             steps {
              archive "'**/INPUT_FOLDER/**'"
+            }
+     }
+        stage ('Publish HTML Reports') {
+            steps {
              publishHTML (target: [
        allowMissing: false,
        alwaysLinkToLastBuild: true,
