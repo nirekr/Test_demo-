@@ -79,6 +79,8 @@ sh"cp '/${WORKSPACE}/INPUT_FOLDER/hdp-capability-registry-api/nexb-output/hdp-ca
 sh"cp '/${WORKSPACE}/INPUT_FOLDER/sample-service-api/nexb-output/sample-service-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
 // Newest additions added on the 28th August 2017 ###
 sh"cp '/${WORKSPACE}/INPUT_FOLDER/network-capabilities-api/nexb-output/network-capabilities-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
+ 
+sh"wget http://ci-build.mpe.lab.vce.com:8080/view/All/job/Nirekr_test/lastSuccessfulBuild/artifact/INPUT_FOLDER/zFinal_Report/ || echo 'file not found' " 
             }
       }
     
