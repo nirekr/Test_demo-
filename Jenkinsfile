@@ -79,7 +79,7 @@ sh"cp '/${WORKSPACE}/INPUT_FOLDER/sample-service-api/nexb-output/sample-service-
 // Newest additions added on the 28th August 2017 ###
 sh"cp '/${WORKSPACE}/INPUT_FOLDER/network-capabilities-api/nexb-output/network-capabilities-api.html' '/${WORKSPACE}/INPUT_FOLDER/zFinal_Report/' "
  
-sh "wget 'http://ci-build.mpe.lab.vce.com:8080/job/Ratnangi%20Nirek/job/${BRANCH_NAME}/lastSuccessfulBuild/artifact/INPUT_FOLDER/ || echo 'folder not found''"
+sh "wget 'http://ci-build.mpe.lab.vce.com:8080/job/Ratnangi%20Nirek/job/${BRANCH_NAME}/lastSuccessfulBuild/artifact/INPUT_FOLDER' || echo 'folder not found'"
       
             }
       }
