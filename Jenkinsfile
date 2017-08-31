@@ -95,7 +95,7 @@ sh"cp '/${WORKSPACE}/INPUT_FOLDER/network-capabilities-api/nexb-output/network-c
     
      stage('Archive Artifacts') {
             steps {
-               archive '**/INPUT_FOLDER/**'
+              archiveArtifacts artifacts: '**/INPUT_FOLDER', fingerprint: true
         
             }
         }  
